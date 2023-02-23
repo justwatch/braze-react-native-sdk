@@ -808,7 +808,7 @@ RCT_EXPORT_METHOD(logInAppMessageButtonClicked:(NSString *)inAppMessageString  b
 #pragma mark - RCTBridgeDelegate protocol
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge {
-  return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index"];
+  return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
 }
 
 RCT_EXPORT_MODULE();
